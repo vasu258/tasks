@@ -10,14 +10,6 @@ str(mydata)
 mydata$Scores=as.integer(mydata$Scores)
 summary(mydata)
 
-#data visualization
-library(ggplot2)
-ggplot(mydata,aes(Hours,Scores))+geom_point()+ggtitle("Scores vs Hours")
-barplot(Hours,Scores,data=mydata)
-plot(mydata,col=" blue",main="Scores vs Hours")
-abline(model,col="red")
-plot(model)
-
 
 # plot for identifying missing values in the dataset
 library(DataExplorer)
@@ -35,6 +27,12 @@ dim(test)
 # Fitting Simple Linear Regression to the Training set
 model=lm(Scores~Hours,data=train)
 summary(model)
+
+#data visualisation
+plot(train$Hours,train$Scores, main = "Main title",
+     xlab = "X axis title", ylab = "Y axis title",
+     pch = 19, frame = FALSE)
+abline(lm(Scores~Hours, data = train), col = "blue")
 
 #predicting the test set output
 pred=predict(model,train)
