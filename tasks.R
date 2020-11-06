@@ -17,7 +17,7 @@ barplot(Hours,Scores,data=mydata)
 plot(mydata,col=" blue",main="Scores vs Hours")
 abline(model,col="red")
 plot(model)
-https://github.com/vasu258/tasks/issues/1#issue-737786280
+
 
 # plot for identifying missing values in the dataset
 library(DataExplorer)
