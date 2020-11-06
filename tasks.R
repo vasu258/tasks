@@ -56,6 +56,16 @@ df=data.frame(test,pred_test)
 df
 df1=data.frame(actual_scores=test$Scores,predicted_scores=pred_test)
 df1
+# actual vs predicted graph
+x=c(21,47,75,30,85,41,95)
+y=c(28.60815,53.42983,85.88896,38.15495,78.25152,47.70175, 89.70768)
+plot(x, type = "o", col = "red",  
+     xlab = "Hours", ylab = "Scores ",  
+     main = "Actual vs predicted") 
+
+lines(y, type = "o", col = "blue")
+legend(1,95, legend=c("actual", "predicted"),
+       col=c("red", "blue"), lty=1:2, cex=0.8)
 rmse(test$Scores,pred_test)
 
 # based on the coefficient of the model
