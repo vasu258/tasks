@@ -3,3 +3,5 @@ This repository consist of the tasks given during my internship at The Sparks Fo
 
 
 Task 1 - Exploring Supervised Machine Learning
+
+Predict the percentage of students based on their no. of hours they studied.
