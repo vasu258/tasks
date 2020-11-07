@@ -34,6 +34,7 @@ fviz_nbclust(iris[, 2:4], kmeans, method ="silhouette", k.max =25) +theme_minima
 
 # function to perform k-means clustering
 library(NbClust)
+library(fpc)
 nc<-NbClust(data =iris[, 2:4], distance="euclidean", min.nc =2, max.nc =20, method ="kmeans")
 nc
 
@@ -49,22 +50,17 @@ kmeans.clus2$betweenss
 #cluster 3
 kmeans.clus3=kmeans(iris[, 2:4], centers=3, nstart =25)
 kmeans.clus3
-
-library(fpc)
-# Plots the clusters
 plotcluster( iris[, 2:4], kmeans.clus3$cluster)
 
-names(kmeans.clus)
-kmeans.clus$withinss
-kmeans.clus$tot.withinss
-kmeans.clus$betweenss
+kmeans.clus3$withinss
+kmeans.clus3$tot.withinss
+kmeans.clus3$betweenss
 # All within cluster sums of squares are small compared to the between cluster sum of squares.
-
 
 
 # Cluster Profile
 #various mean values of the attributes in different clusters
-round(kmeans.clus$centers, 2)
+round(kmeans.clus3$centers, 2)
 round(kmeans.clus2$centers, 2)
 
 table(kmeans.clus3$cluster, iris$Species)
