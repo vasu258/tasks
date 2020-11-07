@@ -27,6 +27,7 @@ Task : From the given ‘Iris’ dataset, predict the optimum number of clusters
 ![image](https://user-images.githubusercontent.com/74041654/98444005-2b65b080-2135-11eb-91e3-f7c9e8d27056.png)
 
 # choosing optimum K
+This method measures how tightly the observations are clustered and the average distance between clusters. For each observation a silhouette width is constructed which is a function ofthe average distance between the point and all other points in the cluster to which it belongs, and the distance between the point and all other points in all other clusters, that it does not belong to.
 ![image](https://user-images.githubusercontent.com/74041654/98444044-72ec3c80-2135-11eb-9c17-245f84874735.png)
 
 # Visualizing the Clusters 
