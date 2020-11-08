@@ -35,3 +35,19 @@ This method measures how tightly the observations are clustered and the average 
 
 ![image](https://user-images.githubusercontent.com/74041654/98444139-10477080-2136-11eb-9e5f-7ba1990ea23d.png)
 
+
+
+## Task 3 - To Explore Decision tree algorithm
+For the given ‘Iris’ dataset, create the Decision Tree classifier and visualize it graphically. The purpose is if we feed any new data to this classifier, it would be able to predict the right class accordingly.
+
+# iris dataset represented visually
+![image](https://user-images.githubusercontent.com/74041654/98463988-af777100-21e5-11eb-8817-0b6f3e5a4d9b.png)
+
+# scatter plot - petal length-width
+![image](https://user-images.githubusercontent.com/74041654/98464005-dcc41f00-21e5-11eb-972c-bbabcf094849.png)
+
+# boxplot- iris dataset
+![image](https://user-images.githubusercontent.com/74041654/98464054-257bd800-21e6-11eb-8d94-29b976f80905.png)
+
+# visualization of decision tree
+![image](https://user-images.githubusercontent.com/74041654/98464064-3d535c00-21e6-11eb-8276-7ad0364e5dae.png)
